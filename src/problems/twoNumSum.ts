@@ -59,19 +59,3 @@ export function twoNumberSumHash(array: Array<number>, targetSum: number) {
   }
   return [];
 }
-
-console.log(
-  `Algo two for loops: [${twoNumberSum([1, 2, 3, 4, 5, 6, 7, 10], 10)}]`
-);
-console.log(
-  `Algo using LR pointers: [${twoNumberSumLR(
-    [1, 2, 3, 4, 5, 6, 7, 12, 16],
-    12
-  )}]`
-);
-console.log(
-  `Algo using Hash Table: [${twoNumberSumHash(
-    [3, 5, -4, 8, 11, 1, -1, 6],
-    10
-  )}]`
-);
