@@ -1,0 +1,15 @@
+{
+  "name": "typescript-algos",
+  "version": "1.0.0",
+  "description": "Testing algos using typescript",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
