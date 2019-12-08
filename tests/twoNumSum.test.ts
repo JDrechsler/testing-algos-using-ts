@@ -1,5 +1,5 @@
 import { expect, assert } from "chai";
-import * as program from "../src/problems/twoNumSum";
+import * as program from "../src/problems/twoNumSum/twoNumSum";
 
 describe("test with two for loops", () => {
   it("sum equals targetSum", () => {

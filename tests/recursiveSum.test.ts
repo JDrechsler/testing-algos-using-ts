@@ -1,5 +1,5 @@
 import { expect, assert } from "chai";
-import * as program from "../src/problems/recursiveSum";
+import * as program from "../src/problems/recursiveSum/recursiveSum";
 
 describe("recursive sum", () => {
   it("sum equals targetSum 10", () => {

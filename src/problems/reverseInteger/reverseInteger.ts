@@ -3,7 +3,7 @@ function reverseInteger(num: number) {
   let remaining = num; //?
 
   while (remaining !== 0) {
-    /*?remaining*/ result; //?
+    result; //?
     remaining; //?
 
     result = result * 10; //?
@@ -17,7 +17,8 @@ function reverseInteger(num: number) {
 
 //Test Cases
 // reverseInteger(18) === 81; //?
-reverseInteger(234) === 432; //?
+// reverseInteger(234) === 432; //?
+reverseInteger(123456789) === 987654321; //?
 // reverseInteger(-67) === -76 //?
 // reverseInteger(7654) === 4567 //?
 // reverseInteger(1) === 1 //?
