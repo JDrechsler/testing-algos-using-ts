@@ -1,0 +1,9 @@
+{
+	"dependencies": {
+		"nodeplotlib": "^0.6.4"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.17",
+		"typescript": "^3.7.3"
+	}
+}
