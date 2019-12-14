@@ -21,16 +21,13 @@ class BST {
 	 * @Worst value
 	 */
 	insertUsingLoop(value: number): BST {
-
-
-
 		let currentNode: BST = this
-
 		let treeMaxHeight = 100
 
-		let bOA = new BigOAnalyzer(0)
-
+		let bOA = new BigOAnalyzer()
 		for (let index = 0; index < treeMaxHeight; index++) {
+			bOA.firstLineOfLoop(index)
+			console.log(index)
 			if (value < currentNode.value) {
 				if (currentNode.left === null) {
 					currentNode.left = new BST(value) //?
@@ -47,12 +44,9 @@ class BST {
 					currentNode = currentNode.right
 				}
 			}
-			console.log(index)
-
-			bOA.updateN(index)
-			index++
 
 		}
+		bOA.done()
 
 		return this;
 	}

@@ -1,33 +1,38 @@
 import { Plot, plot } from 'nodeplotlib'
+/**
+ * @description This Class provides simple analyzing of loops using graphs.
+ */
 export class BigOAnalyzer {
-	private startN: number = 0
-	private startTime: number = 0
-	private currentN: number = 0
 	private xData: Array<number> = []
 	private yData: Array<number> = []
+	private startOfLoopTime: number = 0
+	private firstLineLoopTime: number = 0
 
-	constructor(n: number) {
-		this.startN = n
-		this.currentN = n
-		this.startTime = Date.now() //?
+	/**
+	 * @description Create the instance of the BigOAnalyzer Class right before the loop you are analyzing.
+	 */
+	constructor() {
+		this.startOfLoopTime = Date.now()
 	}
 
-	updateN(newValue: number) {
-		this.currentN = newValue
-		this.trackUpdate(this.currentN)
+	/**
+	 * @description Call this method right in the first line of the loop you are analyzing.
+	 * @param n Typical the index variable of the loop
+	 */
+	firstLineOfLoop(n: number) {
+		this.firstLineLoopTime = Date.now() - this.startOfLoopTime
+		this.xData.push(this.firstLineLoopTime)
+		this.yData.push(n)
 	}
 
+	/**
+	 * @description Call this method after the loop you are analyzing.
+	 */
 	done() {
 		const data: Plot[] = [{
 			x: this.xData,
 			y: this.yData,
 		}];
 		plot(data);
-	}
-
-	private trackUpdate(value: number) {
-		console.log(`Value n: ${value} | time: ${Date.now() - this.startTime}`) //?
-		this.xData.push(Date.now() - this.startTime)
-		this.yData.push(value)
 	}
 }

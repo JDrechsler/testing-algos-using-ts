@@ -8,9 +8,6 @@
 			"type": "node",
 			"request": "launch",
 			"name": "TS Node Debug",
-			"runtimeArgs": [
-				"--inspect-brk=7000"
-			],
 			"program": "${file}",
 			"outFiles": [
 				"${workspaceFolder}/out/**/*.js"

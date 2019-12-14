@@ -13,3 +13,6 @@ myData
 //?
 console.log(myData)
 //?
+
+let myNum: number = 1576292615728
+
