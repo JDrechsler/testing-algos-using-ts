@@ -1,10 +1,15 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"outDir": "out",
-		"sourceMap": true,
-		"skipDefaultLibCheck": true,
-		"skipLibCheck": true
-	}
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": false,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "newLine": "LF",
+    "sourceMap": true,
+    "experimentalDecorators": true
+  }
 }

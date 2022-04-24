@@ -1,9 +1,15 @@
 {
-	"dependencies": {
-		"nodeplotlib": "^0.6.4"
-	},
-	"devDependencies": {
-		"@types/node": "^12.12.17",
-		"typescript": "^3.7.3"
-	}
+  "dependencies": {
+    "nodeplotlib": "^0.6.4",
+    "ts-node": "^10.7.0"
+  },
+  "devDependencies": {
+    "@hediet/debug-visualizer-data-extraction": "^0.14.0",
+    "@types/node": "^12.12.17",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "dev": "tsc --watch"
+  },
+  "type": "module"
 }
